@@ -15,16 +15,17 @@
  */
 package org.ebaysf.web.cors;
 
+import jakarta.servlet.ServletOutputStream;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 import java.util.Locale;
-
-import javax.servlet.ServletOutputStream;
-import javax.servlet.http.Cookie;
-import javax.servlet.http.HttpServletResponse;
 
 public class MockHttpServletResponse implements HttpServletResponse {
     List headerNames = new ArrayList();
@@ -61,6 +62,13 @@ public class MockHttpServletResponse implements HttpServletResponse {
     public void setContentLength(int len) {
         throw new RuntimeException("Not implemented");
     }
+
+
+    @Override
+    public void setContentLengthLong(long l) {
+
+    }
+
 
     public void setContentType(String type) {
 
@@ -153,6 +161,21 @@ public class MockHttpServletResponse implements HttpServletResponse {
         }
         return null;
     }
+
+
+    @Override
+    public Collection<String> getHeaders(String s) {
+
+        return new ArrayList<String>();
+    }
+
+
+    @Override
+    public Collection<String> getHeaderNames() {
+
+        return new ArrayList<String>();
+    }
+
 
     public void setHeader(String name, String value) {
         int index = headerNames.indexOf(name);
