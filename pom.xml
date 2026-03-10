@@ -1,13 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.ebaysf.web</groupId>
+	<groupId>com.github.dalet-oss</groupId>
 	<artifactId>cors-filter</artifactId>
-	<version>1.0.2-SNAPSHOT</version>
+	<version>${revision}</version>
+
 	<packaging>jar</packaging>
 	<name>cors-filter</name>
-	<description>This is a Java servlet filter implementation of server-side CORS for web containers such as Apache Tomcat</description>
-	<url>https://github.com/ebay/cors-filter</url>
+	<description>This is a Jakarta servlet filter implementation of server-side CORS for web containers such as Apache Tomcat</description>
+	<url>https://github.com/dalet-oss/cors-filter</url>
 
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
@@ -24,21 +25,19 @@
 	</licenses>
 
 	<scm>
-		<tag>master</tag>
-		<url>git@github.com:eBay/cors-filter.git</url>
-		<connection>scm:git:git@github.com:eBay/cors-filter.git</connection>
-		<developerConnection>scm:git:git@github.com:eBay/cors-filter.git</developerConnection>
+		<connection>scm:git:git@github.com:dalet-oss/cors-filter.git</connection>
+		<developerConnection>scm:git:git@github.com:dalet-oss/cors-filter.git</developerConnection>
+		<url>https://github.com/dalet-oss/cors-filter.git</url>
 	</scm>
-
-	<issueManagement>
-		<system>Github issues</system>
-		<url>https://github.com/eBay/cors-filter/issues</url>
-	</issueManagement>
 
 	<developers>
 		<developer>
-			<name>Mohit Soni</name>
-			<email>mosoni@ebay.com</email>
+			<name>Oliver Lockwood</name>
+			<email>olockwood@dalet.com</email>
+		</developer>
+		<developer>
+			<name>Atul Prajapati</name>
+			<email>aprajapati@dalet.com</email>
 		</developer>
 	</developers>
 
@@ -59,6 +58,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<revision>DEV</revision>
 	</properties>
 
 	<build>
