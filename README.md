@@ -34,9 +34,9 @@ Include cors-filter-x.x.x.jar in your web-application's classpath. Then, add the
 Add the cors-filter as a dependency:
 ```xml
   <dependency>
-    <groupId>org.ebaysf.web</groupId>
+    <groupId>com.github.dalet-oss</groupId>
     <artifactId>cors-filter</artifactId>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
   </dependency>
 ```
 
