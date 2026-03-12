@@ -15,12 +15,10 @@
  */
 package org.ebaysf.web.cors;
 
+import jakarta.servlet.FilterConfig;
+import jakarta.servlet.ServletContext;
+
 import java.util.Enumeration;
-
-import javax.servlet.FilterConfig;
-import javax.servlet.ServletContext;
-
-import org.ebaysf.web.cors.CORSFilter;
 
 public class TestConfigs {
     public static final String HTTPS_WWW_APACHE_ORG = "https://www.apache.org";
